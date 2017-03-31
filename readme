@@ -3,3 +3,20 @@ http://nma.web.nitech.ac.jp/fukushima/research/weightedjointbilateralfilter.html
 
 The code must requires OpenCV 2.45 or later.
 All codes are parallelized by using appropriated utilities which is based on cv::ParallelLoopBody( implemented in opencv2.45).
+
+<Real-Time Depth Map Refinement>
+http://fukushima.web.nitech.ac.jp/research/wjbf/
+
+<Abstract>
+In this paper, we propose a new refinement filter for depth maps. 
+The filter convolutes a depth map by a jointly computed kernel on a natural image with a weight map.
+We call the filter weighted joint bilateral filter. 
+The filter fits an outline of an object in the depth map to the outline of the object in the natural image, and it reduces noises. 
+An additional filter of slope depth compensation filter removes blur across object boundary. 
+The filter set’s computational cost is low and is independent of depth ranges. 
+Thus we can refine depth maps to generate accurate depth map with lower cost. 
+In addition, we can apply the filters for various types of depth map, such as computed by simple block matching, Markov random field based optimization, and Depth sensors. 
+Experimental results show that the proposed filter has the best performance of improvement of depth map accuracy, and the proposed filter can perform real-time refinement.
+
+<Weighted Joint Bilateral Filter with Slope Depth Compensation Filter for Depth Map Refinement>
+T. Matsuo, N. Fukushima, Y. Ishibashi, "Weighted Joint Bilateral Filter with Slope Depth Compensation Filter for Depth Map Refinement," Proc. International Conference on Computer Vision Theory and Applications (VISAPP 2013), vol. 2, pp. 300-309, Feb. 2013.
